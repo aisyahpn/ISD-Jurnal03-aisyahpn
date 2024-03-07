@@ -1,40 +1,16 @@
 public class Buku {
-    String judul;
+    String judulBuku;
     String penulis;
     int tahunTerbit;
 
-    public Buku(String judul, String penulis, int tahunTerbit) {
-        this.judul = judul;
+
+    public Buku(String judulBuku, String penulis, int tahunTerbit) {
+        this.judulBuku = judulBuku;
         this.penulis = penulis;
         this.tahunTerbit = tahunTerbit;
     }
 
-    public String getJudul() {
-        return judul;
-    }
-
-    public void setJudul(String judul) {
-        this.judul = judul;
-    }
-
-    public String getPenulis() {
-        return penulis;
-    }
-
-    public void setPenulis(String penulis) {
-        this.penulis = penulis;
-    }
-
-    public int getTahunTerbit() {
-        return tahunTerbit;
-    }
-
-    public void setTahunTerbit(int tahunTerbit) {
-        this.tahunTerbit = tahunTerbit;
-    }
-
-    @Override
-    public String toString() {
-        return "Buku [judul=" + judul +", penulis=" + penulis +", tahunTerbit=" + tahunTerbit +"]";
-    }
+    public void display() {
+        System.out.println("Judul Buku: " + this.judulBuku + ", Penulis: " + this.penulis + ", Tahun Terbit: " + this.tahunTerbit);
+    } 
 }
